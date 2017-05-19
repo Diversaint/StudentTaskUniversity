@@ -7,12 +7,26 @@ public class University {
     private String name;
     private Group[] groups;
     private int size;
+    // fixed! when in groups will be null between group, size will be fixed and null will be delete
 
     public University(String name, Group[] groups){
         this.name = name;
         this.groups = groups;
-        size = groups.length;
+        size = countGroups(groups);
+        for (int i = 0; i < groups.length; i++)
+            if (this.groups[i] == null)
+                deleteGroup(i);
     }
+
+    private int countGroups(Group[] groups) {
+        int count = 0;
+        for (Group group : groups) {
+            if(group != null) count++;
+        }
+        return count;
+    }
+    // fixed! when in students will be null between students, size will be fixed and null will be delete
+
     public University(String name, int size){
         this.name = name;
         this.groups = new Group[size];

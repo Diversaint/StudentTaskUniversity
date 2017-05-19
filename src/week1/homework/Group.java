@@ -8,10 +8,21 @@ public class Group {
     private Student[] students;
     private int size;
 
+    private int countStudents(Student[] students) {
+        int count = 0;
+        for (Student student : students) {
+            if(student != null) count++;
+        }
+        return count;
+    }
+    // fixed! when in students will be null between students, size will be fixed and null will be delete
     public Group(int groupNumber, Student[] students) {
         this.groupNumber = groupNumber;
+        size = countStudents(students);
         this.students = students;
-        size = students.length;
+        for (int i = 0; i < students.length; i++)
+            if (this.students[i] == null)
+                deleteStudent(i);
     }
 
     public Group(int groupNumber, int groupSize) {
@@ -50,29 +61,31 @@ public class Group {
             System.out.println("The group is full");
             return false;
         }
-        if (!isAlreadyInGroup(student))
+        if (!noRepetitionInGroup(student))
         return false;
         students[size++] = student;
         return true;
     }
+    // fixed check priority. no check for null because added check in fixed method noRepetitionInGroup. delete chek for size
     public boolean addStudent (Student student, int position) {
-        if (!isAlreadyInGroup(student))
-            return false;
-        if (size == students.length)
-            return false;
-        if (student == null)
-            return false;
         if (position > size){
             students[size++] = student;
             return true;
         }
+        if (student == null)
+            return false;
+        if (!noRepetitionInGroup(student))
+            return false;
         System.arraycopy(students, position, students, position + 1, size - position);
         students[position] = student;
         size++;
 
         return true;
     }
+    // fixed added check for null
     public boolean addStudents(Student[] students) {
+        if (students == null)
+            return false;
         for (int i = 0; i < students.length; i++) {
             if (this.students.length > size) {
                 addStudent(students[i]);
@@ -85,7 +98,10 @@ public class Group {
         return true;
     }
 
-    public boolean isAlreadyInGroup(Student student){
+    //fixed add check if student null, equals will be fixed in next commit, change name of method
+    public boolean noRepetitionInGroup(Student student){
+        if (student == null)
+            return false;
         for (int i = 0; i < size; i++) {
             if (student.equals(students[i])){
                 System.out.println("This student in group already");
@@ -97,7 +113,7 @@ public class Group {
     }
 
     public boolean updateStudent (Student student, int position) {
-        if (!isAlreadyInGroup(student))
+        if (!noRepetitionInGroup(student))
             return false;
         if (size == students.length)
             return false;
@@ -118,6 +134,7 @@ public class Group {
         return true;
     }
     //delete by student
+    //fixed simplified code. equals will be override in next task
     public boolean deleteStudent(Student student) {
         if (student == null)
             return false;

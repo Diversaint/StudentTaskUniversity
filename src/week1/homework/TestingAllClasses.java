@@ -12,6 +12,7 @@ public class TestingAllClasses {
         Student student2 = new Student("Petya", "Ivanov", 35);
         Student student3 = new Student("Vasilii", "Zalupkin", 23);
         Student student4 = new Student("Vanya", "Typoi", 56);
+        Student student41 = new Student("Vanya", "Typoi", 56);
         Student student5 = new Student("Andrew", "Sasun", 27);
         Student student = new Student ();
 

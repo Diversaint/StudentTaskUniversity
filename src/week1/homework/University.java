@@ -14,7 +14,7 @@ public class University {
         this.groups = groups;
         size = countGroups(groups);
         for (int i = 0; i < groups.length; i++)
-            if (this.groups[i] == null)
+            if (this.groups[i] == null && i != groups.length - 1)
                 deleteGroup(i);
     }
 
@@ -55,7 +55,7 @@ public class University {
     }
 
     public boolean deleteGroup(int position){
-        if (position > size || position < 0)
+        if (position >= size || position < 0)
             return false;
         System.arraycopy(groups, position + 1, groups, position, size - position - 1);
         groups[size - 1] = null;

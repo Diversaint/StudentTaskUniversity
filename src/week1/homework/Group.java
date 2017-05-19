@@ -21,7 +21,7 @@ public class Group {
         size = countStudents(students);
         this.students = students;
         for (int i = 0; i < students.length; i++)
-            if (this.students[i] == null)
+            if (this.students[i] == null && i != students.length - 1)
                 deleteStudent(i);
     }
 
@@ -126,7 +126,7 @@ public class Group {
 
     //delete student in position
     public boolean deleteStudent(int position) {
-        if (position > size || position < 0)
+        if (position >= size || position < 0)
             return false;
         System.arraycopy(students, position + 1, students, position, size - position - 1);
         students[size - 1] = null;
@@ -161,5 +161,20 @@ public class Group {
 
         return true;
     }
+
+    @Override
+    public boolean equals(Object var1) {
+        if (var1 == null || this == null)
+            return false;
+        if (!(var1 instanceof Group)) // need '&& this instanceof Student' or no?
+            return false;
+        Group group1 = (Group) var1;
+        Group group2 = this;
+        if (group1.groupNumber == group2.groupNumber)
+            return true;
+        return false;
+    }
+
+
 }
 

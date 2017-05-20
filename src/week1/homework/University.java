@@ -44,11 +44,16 @@ public class University {
     public boolean addGroup(Group group){
         if (group == null)
             return false;
-        if (size == groups.length)
-            return false;
         for (int i = 0; i < size; i++) {
             if (group.equals(groups[i]))
                 return false;
+        }
+        if (size == groups.length) {
+            Group[] tempGroup = new Group[size + 1];
+            System.arraycopy(groups, 0, tempGroup, 0, size);
+            tempGroup[size++] = group;
+            groups = tempGroup;
+            return true;
         }
         groups[size++] = group;
         return true;

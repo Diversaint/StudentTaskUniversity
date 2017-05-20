@@ -57,12 +57,16 @@ public class Group {
             //System.out.println("Student is invalid");
             return false;
         }
-        if (size == students.length) {
-            System.out.println("The group is full");
-            return false;
-        }
         if (!noRepetitionInGroup(student))
-        return false;
+            return false;
+        // modified method. Create new bigger array
+        if (size == students.length) {
+            Student[] tempStudents = new Student[size + 1];
+            System.arraycopy(students, 0, tempStudents, 0, size);
+            tempStudents[size++] = student;
+            students = tempStudents;
+            return true;
+        }
         students[size++] = student;
         return true;
     }

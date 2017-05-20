@@ -230,7 +230,7 @@ public class Tests {
         University university1 = new University("1", 5);
         University university2 = new University("2", new Group[]{group1, group2, group3, null});
         boolean expected = true;
-        boolean actual = university2.deleteGroup(3);
+        boolean actual = university2.deleteGroup(2);
         System.out.format("testDeleteGroup1 \tresult - %b, actual - %b, expected - %b\n", actual == expected, actual, expected);
     }
     public void testDeleteGroup2(){

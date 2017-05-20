@@ -59,16 +59,15 @@ public class Student {
     public String asString(){
         return String.format("Student name - %-10s, surname - %-10s, age -  %-5d", name, surName, age);
     }
-    // override equals to student
+    // override equals to student // fixed
     @Override
     public boolean equals(Object var1) {
-        if (var1 == null || this == null)
+        if (var1 == null)
             return false;
         if (!(var1 instanceof Student)) // need '&& this instanceof Student' or no?
             return false;
         Student student1 = (Student)var1;
-        Student student2 = this;
-        if (student1.name.equals(student2.name) && student1.surName.equals(student2.surName) && student1.age == student2.age)
+        if (student1.name.equals(this.name) && student1.surName.equals(this.surName) && student1.age == this.age)
             return true;
         return false;
     }

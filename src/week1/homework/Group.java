@@ -162,15 +162,14 @@ public class Group {
         return true;
     }
 
-    @Override
+    @Override // fixed
     public boolean equals(Object var1) {
-        if (var1 == null || this == null)
+        if (var1 == null)
             return false;
         if (!(var1 instanceof Group)) // need '&& this instanceof Student' or no?
             return false;
         Group group1 = (Group) var1;
-        Group group2 = this;
-        if (group1.groupNumber == group2.groupNumber)
+        if (group1.groupNumber == this.groupNumber)
             return true;
         return false;
     }

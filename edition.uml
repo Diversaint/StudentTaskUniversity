@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>week1.homework.inheritance.edition</OriginalElement>
+  <nodes>
+    <node x="528.1805555555555" y="0.0">week1.homework.inheritance.edition.Edition</node>
+    <node x="422.0" y="403.5">week1.homework.inheritance.edition.Encyclopedia</node>
+    <node x="0.0" y="392.0">week1.homework.inheritance.edition.Directory</node>
+    <node x="543.9166666666666" y="589.0">week1.homework.inheritance.edition.TestEdition</node>
+    <node x="394.18055555555554" y="103.0">week1.homework.inheritance.edition.Book</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="week1.homework.inheritance.edition.Directory" target="week1.homework.inheritance.edition.Book">
+      <point x="0.0" y="-73.5" />
+      <point x="201.0" y="367.0" />
+      <point x="464.0138888888889" y="367.0" />
+      <point x="-139.66666666666663" y="119.5" />
+    </edge>
+    <edge source="week1.homework.inheritance.edition.Book" target="week1.homework.inheritance.edition.Edition">
+      <point x="0.0" y="-119.5" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="week1.homework.inheritance.edition.Encyclopedia" target="week1.homework.inheritance.edition.Book">
+      <point x="0.0" y="-62.0" />
+      <point x="614.0" y="367.0" />
+      <point x="603.6805555555555" y="367.0" />
+      <point x="0.0" y="119.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="106.42857142857156" y="355.7142857142856" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

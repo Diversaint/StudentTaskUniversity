@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5e8d791-5c28-41bc-893d-9b6132097920" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/week1/homework/inheritance/edition/Book.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/week1/homework/inheritance/edition/Directory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/week1/homework/inheritance/edition/Edition.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/week1/homework/inheritance/edition/Encyclopedia.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/week1/homework/inheritance/edition/TestEdition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="b5e8d791-5c28-41bc-893d-9b6132097920" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -86,15 +79,62 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestEdition.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestEdition.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/edition/TestEdition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="336">
+              <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
               <folding>
                 <element signature="e#504#505#0" expanded="true" />
                 <element signature="e#562#563#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JAVA/week1.homework.inheritance.edition" pinned="false" current-in-tab="true">
+        <entry file="uml://JAVA/week1.homework.inheritance.edition">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>week1.homework.inheritance.edition</OriginalElement>
+              <nodes>
+                <node x="528.1805555555555" y="0.0">week1.homework.inheritance.edition.Edition</node>
+                <node x="422.0" y="403.5">week1.homework.inheritance.edition.Encyclopedia</node>
+                <node x="0.0" y="392.0">week1.homework.inheritance.edition.Directory</node>
+                <node x="543.9166666666666" y="589.0">week1.homework.inheritance.edition.TestEdition</node>
+                <node x="394.18055555555554" y="103.0">week1.homework.inheritance.edition.Book</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="week1.homework.inheritance.edition.Directory" target="week1.homework.inheritance.edition.Book">
+                  <point x="0.0" y="-73.5" />
+                  <point x="201.0" y="367.0" />
+                  <point x="464.0138888888889" y="367.0" />
+                  <point x="-139.66666666666663" y="119.5" />
+                </edge>
+                <edge source="week1.homework.inheritance.edition.Book" target="week1.homework.inheritance.edition.Edition">
+                  <point x="0.0" y="-119.5" />
+                  <point x="0.0" y="26.5" />
+                </edge>
+                <edge source="week1.homework.inheritance.edition.Encyclopedia" target="week1.homework.inheritance.edition.Book">
+                  <point x="0.0" y="-62.0" />
+                  <point x="614.0" y="367.0" />
+                  <point x="603.6805555555555" y="367.0" />
+                  <point x="0.0" y="119.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="106.42857142857156" y="355.7142857142856" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Fields</Category>
+                <Category>Constructors</Category>
+                <Category>Methods</Category>
+                <Category>Properties</Category>
+                <Category>Inner Classes</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
@@ -105,18 +145,6 @@
             <state relative-caret-position="80">
               <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="University.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/week1/homework/University.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="47" column="26" lean-forward="false" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
-              <folding>
-                <marker date="1495440558953" expanded="true" signature="1909:2146" ph="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -837,7 +865,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69898000" />
+    <option name="totallyTimeSpent" value="70479000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1919" y="0" width="1922" height="1053" extended-state="6" />
@@ -862,8 +890,8 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31099477" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31099477" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18177083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1309,14 +1337,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/edition/Edition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/edition/Book.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
@@ -1338,18 +1358,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/edition/Encyclopedia.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="36" lean-forward="false" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-          <folding>
-            <element signature="e#464#465#0" expanded="true" />
-            <element signature="e#694#695#0" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/edition/Directory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -1367,14 +1375,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/edition/Edition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/edition/Encyclopedia.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="36" lean-forward="false" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+          <folding>
+            <element signature="e#464#465#0" expanded="true" />
+            <element signature="e#694#695#0" expanded="true" />
+            <element signature="e#749#750#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/edition/TestEdition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="336">
+          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
           <folding>
             <element signature="e#504#505#0" expanded="true" />
             <element signature="e#562#563#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/week1.homework.inheritance.edition">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>week1.homework.inheritance.edition</OriginalElement>
+          <nodes>
+            <node x="528.1805555555555" y="0.0">week1.homework.inheritance.edition.Edition</node>
+            <node x="422.0" y="403.5">week1.homework.inheritance.edition.Encyclopedia</node>
+            <node x="0.0" y="392.0">week1.homework.inheritance.edition.Directory</node>
+            <node x="543.9166666666666" y="589.0">week1.homework.inheritance.edition.TestEdition</node>
+            <node x="394.18055555555554" y="103.0">week1.homework.inheritance.edition.Book</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="week1.homework.inheritance.edition.Directory" target="week1.homework.inheritance.edition.Book">
+              <point x="0.0" y="-73.5" />
+              <point x="201.0" y="367.0" />
+              <point x="464.0138888888889" y="367.0" />
+              <point x="-139.66666666666663" y="119.5" />
+            </edge>
+            <edge source="week1.homework.inheritance.edition.Book" target="week1.homework.inheritance.edition.Edition">
+              <point x="0.0" y="-119.5" />
+              <point x="0.0" y="26.5" />
+            </edge>
+            <edge source="week1.homework.inheritance.edition.Encyclopedia" target="week1.homework.inheritance.edition.Book">
+              <point x="0.0" y="-62.0" />
+              <point x="614.0" y="367.0" />
+              <point x="603.6805555555555" y="367.0" />
+              <point x="0.0" y="119.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="106.42857142857156" y="355.7142857142856" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>

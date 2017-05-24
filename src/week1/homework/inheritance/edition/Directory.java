@@ -6,6 +6,10 @@ package week1.homework.inheritance.edition;
 public class Directory extends Book {
     private String classification;
 
+    public Directory(String name, String author, String genre, int numberOfPages, int yearOfIssue, String classification) {
+        super(name, author, genre, numberOfPages, yearOfIssue);
+        this.classification = classification;
+    }
     public void setClassification(String classification) {
         this.classification = classification;
     }
@@ -14,10 +18,7 @@ public class Directory extends Book {
         return classification;
     }
 
-    public Directory(String name, String author, String genre, int numberOfPages, int yearOfIssue, String classification) {
-        super(name, author, genre, numberOfPages, yearOfIssue);
-        this.classification = classification;
-    }
+
 
     public void printClassification(){
         System.out.println(classification);

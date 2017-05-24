@@ -12,6 +12,14 @@ public abstract class Book implements Edition{
     private int numberOfPages;
     private int yearOfIssue;
 
+    public Book(String name, String author, String genre, int numberOfPages, int yearOfIssue) {
+        this.name = name;
+        this.author = author;
+        this.genre = genre;
+        this.numberOfPages = numberOfPages;
+        this.yearOfIssue = yearOfIssue;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -32,13 +40,6 @@ public abstract class Book implements Edition{
         this.yearOfIssue = yearOfIssue;
     }
 
-    public Book(String name, String author, String genre, int numberOfPages, int yearOfIssue) {
-        this.name = name;
-        this.author = author;
-        this.genre = genre;
-        this.numberOfPages = numberOfPages;
-        this.yearOfIssue = yearOfIssue;
-    }
 
     @Override
     public void printInfo() {

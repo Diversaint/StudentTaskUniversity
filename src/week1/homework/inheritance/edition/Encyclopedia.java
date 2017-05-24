@@ -4,7 +4,7 @@ package week1.homework.inheritance.edition;
  * Created by saint on 23.05.17.
  */
 public class Encyclopedia extends Book{
-    int nubmerOfVolume;
+    private int nubmerOfVolume;
 
     public Encyclopedia(String name, String author, String genre, int numberOfPages, int yearOfIssue, int nubmerOfVolume) {
         super(name, author, genre, numberOfPages, yearOfIssue);

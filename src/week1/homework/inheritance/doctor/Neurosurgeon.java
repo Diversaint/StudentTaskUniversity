@@ -3,7 +3,7 @@ package week1.homework.inheritance.doctor;
 /**
  * Created by saint on 24.05.17.
  */
-public class Neurosurgeon extends Surgeon implements Doctor{
+public class Neurosurgeon extends Surgeon{
     private String subsections;
 
     public Neurosurgeon(String name, String secession, int numberOfRoom, String shift, String subsections) {

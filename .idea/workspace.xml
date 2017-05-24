@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5e8d791-5c28-41bc-893d-9b6132097920" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/week1/homework/inheritance/doctor/Doctor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/week1/homework/inheritance/doctor/Neurosurgeon.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/week1/homework/inheritance/doctor/Surgeon.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/week1/homework/inheritance/doctor/TestDoctor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/week1/homework/inheritance/edition/Book.java" afterPath="$PROJECT_DIR$/src/week1/homework/inheritance/edition/Book.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/week1/homework/inheritance/edition/Directory.java" afterPath="$PROJECT_DIR$/src/week1/homework/inheritance/edition/Directory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/week1/homework/inheritance/doctor/Neurosurgeon.java" afterPath="$PROJECT_DIR$/src/week1/homework/inheritance/doctor/Neurosurgeon.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/week1/homework/inheritance/edition/Encyclopedia.java" afterPath="$PROJECT_DIR$/src/week1/homework/inheritance/edition/Encyclopedia.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,43 +16,60 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Book.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/edition/Book.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding>
-                <element signature="e#582#583#0" expanded="true" />
-                <element signature="e#614#615#0" expanded="true" />
-                <element signature="e#658#659#0" expanded="true" />
-                <element signature="e#694#695#0" expanded="true" />
-                <element signature="e#736#737#0" expanded="true" />
-                <element signature="e#770#771#0" expanded="true" />
-                <element signature="e#825#826#0" expanded="true" />
-                <element signature="e#875#876#0" expanded="true" />
-                <element signature="e#926#927#0" expanded="true" />
-                <element signature="e#972#973#0" expanded="true" />
-                <element signature="e#1018#1019#0" expanded="true" />
-                <element signature="e#1066#1067#0" expanded="true" />
-              </folding>
+      <file leaf-file-name="doctor.uml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doctor.uml">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>week1.homework.inheritance.doctor</OriginalElement>
+              <nodes>
+                <node x="197.5" y="474.0">week1.homework.inheritance.doctor.TestDoctor</node>
+                <node x="0.0" y="323.0">week1.homework.inheritance.doctor.Neurosurgeon</node>
+                <node x="104.5" y="103.0">week1.homework.inheritance.doctor.Surgeon</node>
+                <node x="218.5" y="0.0">week1.homework.inheritance.doctor.Doctor</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="week1.homework.inheritance.doctor.Neurosurgeon" target="week1.homework.inheritance.doctor.Doctor">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="week1.homework.inheritance.doctor.Neurosurgeon" target="week1.homework.inheritance.doctor.Surgeon">
+                  <point x="0.0" y="-50.5" />
+                  <point x="185.5" y="298.0" />
+                  <point x="194.0" y="298.0" />
+                  <point x="-89.5" y="85.0" />
+                </edge>
+                <edge source="week1.homework.inheritance.doctor.Surgeon" target="week1.homework.inheritance.doctor.Doctor">
+                  <point x="0.0" y="-85.0" />
+                  <point x="0.0" y="26.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.8" x="-431.875" y="170.125" />
+              <SelectedNodes>
+                <node>week1.homework.inheritance.doctor.TestDoctor</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Fields</Category>
+                <Category>Inner Classes</Category>
+                <Category>Constructors</Category>
+                <Category>Properties</Category>
+                <Category>Methods</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Directory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/edition/Directory.java">
+      <file leaf-file-name="Encyclopedia.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/edition/Encyclopedia.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            <state relative-caret-position="96">
+              <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
               <folding>
-                <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#509#510#0" expanded="true" />
-                <element signature="e#550#551#0" expanded="true" />
-                <element signature="e#587#588#0" expanded="true" />
-                <element signature="e#629#630#0" expanded="true" />
-                <element signature="e#679#680#0" expanded="true" />
-                <element signature="e#731#732#0" expanded="true" />
-                <element signature="e#786#787#0" expanded="true" />
+                <element signature="e#435#436#0" expanded="true" />
+                <element signature="e#472#473#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,18 +78,48 @@
       <file leaf-file-name="TestEdition.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/edition/TestEdition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
+            <state relative-caret-position="304">
               <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Neurosurgeon.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/doctor/Neurosurgeon.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Surgeon.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/doctor/Surgeon.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="448">
+              <caret line="36" column="83" lean-forward="true" selection-start-line="36" selection-start-column="83" selection-end-line="36" selection-end-column="83" />
               <folding>
-                <element signature="e#504#505#0" expanded="true" />
-                <element signature="e#562#563#0" expanded="true" />
+                <element signature="e#755#756#0" expanded="true" />
+                <element signature="e#845#846#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JAVA/week1.homework.inheritance.edition" pinned="false" current-in-tab="false">
-        <entry file="uml://JAVA/week1.homework.inheritance.edition">
+      <file leaf-file-name="TestDoctor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/doctor/TestDoctor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editions.uml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editions.uml">
           <provider selected="true" editor-type-id="UmlEditorProvider">
             <state>
               <ID>JAVA</ID>
@@ -91,15 +133,15 @@
               </nodes>
               <notes />
               <edges>
+                <edge source="week1.homework.inheritance.edition.Book" target="week1.homework.inheritance.edition.Edition">
+                  <point x="0.0" y="-119.5" />
+                  <point x="0.0" y="26.5" />
+                </edge>
                 <edge source="week1.homework.inheritance.edition.Directory" target="week1.homework.inheritance.edition.Book">
                   <point x="0.0" y="-73.5" />
                   <point x="201.0" y="367.0" />
                   <point x="464.0138888888889" y="367.0" />
                   <point x="-139.66666666666663" y="119.5" />
-                </edge>
-                <edge source="week1.homework.inheritance.edition.Book" target="week1.homework.inheritance.edition.Edition">
-                  <point x="0.0" y="-119.5" />
-                  <point x="0.0" y="26.5" />
                 </edge>
                 <edge source="week1.homework.inheritance.edition.Encyclopedia" target="week1.homework.inheritance.edition.Book">
                   <point x="0.0" y="-62.0" />
@@ -108,125 +150,17 @@
                   <point x="0.0" y="119.5" />
                 </edge>
               </edges>
-              <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="-672.8571428571427" y="279.2857142857142" />
+              <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="-673.2857142857142" y="279.5714285714286" />
               <SelectedNodes />
               <Categories>
                 <Category>Fields</Category>
-                <Category>Constructors</Category>
-                <Category>Methods</Category>
-                <Category>Properties</Category>
                 <Category>Inner Classes</Category>
+                <Category>Constructors</Category>
+                <Category>Properties</Category>
+                <Category>Methods</Category>
               </Categories>
               <SCOPE>All</SCOPE>
               <VISIBILITY>private</VISIBILITY>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Surgeon.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/doctor/Surgeon.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="36" column="83" lean-forward="true" selection-start-line="36" selection-start-column="83" selection-end-line="36" selection-end-column="83" />
-              <folding>
-                <element signature="e#488#489#0" expanded="true" />
-                <element signature="e#515#516#0" expanded="true" />
-                <element signature="e#551#552#0" expanded="true" />
-                <element signature="e#583#584#0" expanded="true" />
-                <element signature="e#619#620#0" expanded="true" />
-                <element signature="e#654#655#0" expanded="true" />
-                <element signature="e#686#687#0" expanded="true" />
-                <element signature="e#714#715#0" expanded="true" />
-                <element signature="e#755#756#0" expanded="true" />
-                <element signature="e#845#846#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Neurosurgeon.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/doctor/Neurosurgeon.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding>
-                <element signature="e#423#424#0" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#499#500#0" expanded="true" />
-                <element signature="e#588#589#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestDoctor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/doctor/TestDoctor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Doctor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/doctor/Doctor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JAVA/week1.homework.inheritance.doctor" pinned="false" current-in-tab="false">
-        <entry file="uml://JAVA/week1.homework.inheritance.doctor">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>week1.homework.inheritance.doctor</OriginalElement>
-              <nodes>
-                <node x="197.5" y="474.0">week1.homework.inheritance.doctor.TestDoctor</node>
-                <node x="0.0" y="323.0">week1.homework.inheritance.doctor.Neurosurgeon</node>
-                <node x="104.5" y="103.0">week1.homework.inheritance.doctor.Surgeon</node>
-                <node x="218.5" y="0.0">week1.homework.inheritance.doctor.Doctor</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="week1.homework.inheritance.doctor.Neurosurgeon" target="week1.homework.inheritance.doctor.Surgeon">
-                  <point x="0.0" y="-50.5" />
-                  <point x="185.5" y="298.0" />
-                  <point x="194.0" y="298.0" />
-                  <point x="-89.5" y="85.0" />
-                </edge>
-                <edge source="week1.homework.inheritance.doctor.Surgeon" target="week1.homework.inheritance.doctor.Doctor">
-                  <point x="0.0" y="-85.0" />
-                  <point x="0.0" y="26.5" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.8" x="-432.0" y="79.0" />
-              <SelectedNodes>
-                <node>week1.homework.inheritance.doctor.TestDoctor</node>
-              </SelectedNodes>
-              <Categories>
-                <Category>Fields</Category>
-                <Category>Constructors</Category>
-                <Category>Methods</Category>
-                <Category>Inner Classes</Category>
-                <Category>Properties</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Edition.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/edition/Edition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -283,7 +217,6 @@
         <option value="$PROJECT_DIR$/src/week1/homework/inheritance/Book.java" />
         <option value="$PROJECT_DIR$/src/week1/homework/inheritance/Directory.java" />
         <option value="$PROJECT_DIR$/src/week1/homework/inheritance/Encyclopedia.java" />
-        <option value="$PROJECT_DIR$/src/week1/homework/inheritance/edition/Encyclopedia.java" />
         <option value="$PROJECT_DIR$/src/week1/homework/inheritance/edition/TestEdition.java" />
         <option value="$PROJECT_DIR$/src/week1/homework/inheritance/doctor/Doctor.java" />
         <option value="$PROJECT_DIR$/src/week1/homework/inheritance/edition/Book.java" />
@@ -291,6 +224,7 @@
         <option value="$PROJECT_DIR$/src/week1/homework/inheritance/doctor/Surgeon.java" />
         <option value="$PROJECT_DIR$/src/week1/homework/inheritance/doctor/TestDoctor.java" />
         <option value="$PROJECT_DIR$/src/week1/homework/inheritance/doctor/Neurosurgeon.java" />
+        <option value="$PROJECT_DIR$/src/week1/homework/inheritance/edition/Encyclopedia.java" />
       </list>
     </option>
   </component>
@@ -966,11 +900,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72779000" />
+    <option name="totallyTimeSpent" value="74530000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1919" y="0" width="1922" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -991,8 +924,8 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31099477" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31099477" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18177083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1438,29 +1371,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/edition/Encyclopedia.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="36" lean-forward="false" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-          <folding>
-            <element signature="e#464#465#0" expanded="true" />
-            <element signature="e#694#695#0" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/edition/TestEdition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-          <folding>
-            <element signature="e#504#505#0" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/edition/Book.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -1499,73 +1409,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/edition/Edition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/doctor/Surgeon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="36" column="83" lean-forward="true" selection-start-line="36" selection-start-column="83" selection-end-line="36" selection-end-column="83" />
-          <folding>
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#551#552#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#619#620#0" expanded="true" />
-            <element signature="e#654#655#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#845#846#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/doctor/TestDoctor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://JAVA/week1.homework.inheritance.edition">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
           <ID>JAVA</ID>
           <OriginalElement>week1.homework.inheritance.edition</OriginalElement>
           <nodes>
-            <node x="528.1805555555555" y="0.0">week1.homework.inheritance.edition.Edition</node>
-            <node x="422.0" y="403.5">week1.homework.inheritance.edition.Encyclopedia</node>
-            <node x="0.0" y="392.0">week1.homework.inheritance.edition.Directory</node>
-            <node x="543.9166666666666" y="589.0">week1.homework.inheritance.edition.TestEdition</node>
-            <node x="394.18055555555554" y="103.0">week1.homework.inheritance.edition.Book</node>
+            <node x="" y="">week1.homework.inheritance.edition.Edition</node>
+            <node x="" y="">week1.homework.inheritance.edition.Encyclopedia</node>
+            <node x="" y="">week1.homework.inheritance.edition.Directory</node>
+            <node x="" y="">week1.homework.inheritance.edition.TestEdition</node>
+            <node x="" y="">week1.homework.inheritance.edition.Book</node>
           </nodes>
           <notes />
-          <edges>
-            <edge source="week1.homework.inheritance.edition.Directory" target="week1.homework.inheritance.edition.Book">
-              <point x="0.0" y="-73.5" />
-              <point x="201.0" y="367.0" />
-              <point x="464.0138888888889" y="367.0" />
-              <point x="-139.66666666666663" y="119.5" />
-            </edge>
-            <edge source="week1.homework.inheritance.edition.Book" target="week1.homework.inheritance.edition.Edition">
-              <point x="0.0" y="-119.5" />
-              <point x="0.0" y="26.5" />
-            </edge>
-            <edge source="week1.homework.inheritance.edition.Encyclopedia" target="week1.homework.inheritance.edition.Book">
-              <point x="0.0" y="-62.0" />
-              <point x="614.0" y="367.0" />
-              <point x="603.6805555555555" y="367.0" />
-              <point x="0.0" y="119.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="-672.8571428571427" y="279.2857142857142" />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="106.42857142857156" y="355.7142857142856" />
           <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
@@ -1593,28 +1451,15 @@
           <ID>JAVA</ID>
           <OriginalElement>week1.homework.inheritance.doctor</OriginalElement>
           <nodes>
-            <node x="197.5" y="474.0">week1.homework.inheritance.doctor.TestDoctor</node>
-            <node x="0.0" y="323.0">week1.homework.inheritance.doctor.Neurosurgeon</node>
-            <node x="104.5" y="103.0">week1.homework.inheritance.doctor.Surgeon</node>
-            <node x="218.5" y="0.0">week1.homework.inheritance.doctor.Doctor</node>
+            <node x="" y="">week1.homework.inheritance.doctor.TestDoctor</node>
+            <node x="" y="">week1.homework.inheritance.doctor.Neurosurgeon</node>
+            <node x="" y="">week1.homework.inheritance.doctor.Surgeon</node>
+            <node x="" y="">week1.homework.inheritance.doctor.Doctor</node>
           </nodes>
           <notes />
-          <edges>
-            <edge source="week1.homework.inheritance.doctor.Neurosurgeon" target="week1.homework.inheritance.doctor.Surgeon">
-              <point x="0.0" y="-50.5" />
-              <point x="185.5" y="298.0" />
-              <point x="194.0" y="298.0" />
-              <point x="-89.5" y="85.0" />
-            </edge>
-            <edge source="week1.homework.inheritance.doctor.Surgeon" target="week1.homework.inheritance.doctor.Doctor">
-              <point x="0.0" y="-85.0" />
-              <point x="0.0" y="26.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.8" x="-432.0" y="79.0" />
-          <SelectedNodes>
-            <node>week1.homework.inheritance.doctor.TestDoctor</node>
-          </SelectedNodes>
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.8" x="249.875" y="465.875" />
+          <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
             <Category>Constructors</Category>
@@ -1627,15 +1472,145 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/edition/Edition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editions.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>week1.homework.inheritance.edition</OriginalElement>
+          <nodes>
+            <node x="528.1805555555555" y="0.0">week1.homework.inheritance.edition.Edition</node>
+            <node x="422.0" y="403.5">week1.homework.inheritance.edition.Encyclopedia</node>
+            <node x="0.0" y="392.0">week1.homework.inheritance.edition.Directory</node>
+            <node x="543.9166666666666" y="589.0">week1.homework.inheritance.edition.TestEdition</node>
+            <node x="394.18055555555554" y="103.0">week1.homework.inheritance.edition.Book</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="week1.homework.inheritance.edition.Book" target="week1.homework.inheritance.edition.Edition">
+              <point x="0.0" y="-119.5" />
+              <point x="0.0" y="26.5" />
+            </edge>
+            <edge source="week1.homework.inheritance.edition.Directory" target="week1.homework.inheritance.edition.Book">
+              <point x="0.0" y="-73.5" />
+              <point x="201.0" y="367.0" />
+              <point x="464.0138888888889" y="367.0" />
+              <point x="-139.66666666666663" y="119.5" />
+            </edge>
+            <edge source="week1.homework.inheritance.edition.Encyclopedia" target="week1.homework.inheritance.edition.Book">
+              <point x="0.0" y="-62.0" />
+              <point x="614.0" y="367.0" />
+              <point x="603.6805555555555" y="367.0" />
+              <point x="0.0" y="119.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="-673.2857142857142" y="279.5714285714286" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Inner Classes</Category>
+            <Category>Constructors</Category>
+            <Category>Properties</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doctor.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>week1.homework.inheritance.doctor</OriginalElement>
+          <nodes>
+            <node x="197.5" y="474.0">week1.homework.inheritance.doctor.TestDoctor</node>
+            <node x="0.0" y="323.0">week1.homework.inheritance.doctor.Neurosurgeon</node>
+            <node x="104.5" y="103.0">week1.homework.inheritance.doctor.Surgeon</node>
+            <node x="218.5" y="0.0">week1.homework.inheritance.doctor.Doctor</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="week1.homework.inheritance.doctor.Neurosurgeon" target="week1.homework.inheritance.doctor.Doctor">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="week1.homework.inheritance.doctor.Neurosurgeon" target="week1.homework.inheritance.doctor.Surgeon">
+              <point x="0.0" y="-50.5" />
+              <point x="185.5" y="298.0" />
+              <point x="194.0" y="298.0" />
+              <point x="-89.5" y="85.0" />
+            </edge>
+            <edge source="week1.homework.inheritance.doctor.Surgeon" target="week1.homework.inheritance.doctor.Doctor">
+              <point x="0.0" y="-85.0" />
+              <point x="0.0" y="26.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.8" x="-431.875" y="170.125" />
+          <SelectedNodes>
+            <node>week1.homework.inheritance.doctor.TestDoctor</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Inner Classes</Category>
+            <Category>Constructors</Category>
+            <Category>Properties</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/doctor/Neurosurgeon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="80">
+          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/doctor/Surgeon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="36" column="83" lean-forward="true" selection-start-line="36" selection-start-column="83" selection-end-line="36" selection-end-column="83" />
           <folding>
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+            <element signature="e#845#846#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/doctor/TestDoctor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/edition/TestEdition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/week1/homework/inheritance/edition/Encyclopedia.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding>
+            <element signature="e#435#436#0" expanded="true" />
+            <element signature="e#472#473#0" expanded="true" />
           </folding>
         </state>
       </provider>

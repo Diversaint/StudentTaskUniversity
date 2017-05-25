@@ -19,7 +19,6 @@ public class Student {
         name = "";
         surName = "";
     }
-
     public Student(String name, String surName, int age){
         this.name = name;
         this.surName = surName;

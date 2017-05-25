@@ -32,11 +32,19 @@ public class MyArrayList implements MyList {
 
     @Override
     public boolean contains(Object o) {
+        for (int i = 0; i < size; i++) {
+            if (o == null ? elementData[i] == null : o.equals(elementData[i]))
+                return true;
+        }
         return false;
     }
 
     @Override
     public void clear() {
+        for (int i = 0; i < size; i++) {
+            elementData[i] = null;
+        }
+        size = 0;
 
     }
 
@@ -77,21 +85,37 @@ public class MyArrayList implements MyList {
 
     @Override
     public boolean add(Object o, int index) {
-        return false;
+        if (index < 0 || index > size) return false;
+        if(size == elementData.length) ensureCapacity();
+        System.arraycopy(elementData, index, elementData, index + 1, size - index);
+        elementData[index] = o;
+        return true;
     }
 
     @Override
     public Object get(int index) {
-        return null;
+        if (index < 0 || index > size) return null;
+            return elementData[index];
     }
 
     @Override
     public Object remove(int index) {
-        return null;
+        if (index < 0 || index > size) return null;
+        Object temp = elementData[index];
+        System.arraycopy(elementData, index + 1, elementData, index, size - index - 1);
+        if (size != elementData.length)
+        elementData[size--] = null;
+        else {
+            elementData[index] = null;
+            size--;
+        }
+        return temp;
     }
 
     @Override
     public boolean set(Object o, int index) {
-        return false;
+        if (index < 0 || index >= size) return false;
+        elementData[index] = o;
+        return true;
     }
 }

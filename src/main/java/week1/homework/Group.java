@@ -1,5 +1,7 @@
 package week1.homework;
 
+import java.util.ArrayList;
+
 /**
  * Created by saint on 17.05.17.
  */
@@ -177,7 +179,6 @@ public class Group {
             return true;
         return false;
     }
-
 
 }
 

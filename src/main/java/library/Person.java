@@ -1,0 +1,113 @@
+package library;
+
+
+import java.util.TreeSet;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/**
+ * Created by macbook on 26.05.17.
+ */
+public class Person implements Comparable<Object>{
+    private String name;
+    private String surName;
+    private char sex;
+    private int age;
+    private TreeSet<Edition> editions;
+
+    public Person(String name, String surName, char sex, int age) {
+        this.name = name;
+        this.surName = surName;
+        this.sex = sex;
+        this.age = age;
+    }
+
+    public void setName(String name) {
+        Pattern alph = Pattern.compile("[a-zA-Z]+");
+        Matcher matcher = alph.matcher(name);
+        if (matcher.matches())
+            this.name = name;
+        else {
+            this.name = "";
+            System.out.println("For name use only letters");
+        }
+    }
+
+    public void setSurName(String surName) {
+        Pattern alph = Pattern.compile("[a-zA-Z]+");
+        Matcher matcher = alph.matcher(surName);
+        if (matcher.matches())
+            this.surName = surName;
+
+        else {
+            this.surName = "";
+            System.out.println("For surname use only letters");
+        }
+    }
+
+    public void setAge(int age) {
+        if (age > 14 && age < 60)
+            this.age = age;
+        else
+            System.out.println("Check typing age and try again");
+    }
+
+    public void setSex(char sex) {
+        if (sex == 'w' || sex == 'm')
+        this.sex = sex;
+        else{
+            System.out.println("Enter your sex w (woman) or m (man)");
+        }
+    }
+
+    public Person(Person person) {
+        this.name = person.name;
+        this.age = person.age;
+        this.surName = person.surName;
+        this.sex = person.sex;
+        this.editions = person.editions;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSurName() {
+        return surName;
+    }
+
+    public char getSex() {
+        return sex;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public TreeSet<Edition> getEditions() {
+        return new TreeSet(editions);
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", surName='" + surName + '\'' +
+                ", sex=" + sex +
+                ", age=" + age +
+                ", edition=" + editions +
+                '}';
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        Person person = (Person) o;
+        int compareToResult = this.name.compareTo(person.name);
+        if (compareToResult != 0) return compareToResult;
+        compareToResult = this.surName.compareTo(person.surName);
+        if (compareToResult != 0) return compareToResult;
+        compareToResult = this.age - person.age;
+        return compareToResult;
+
+    }
+}

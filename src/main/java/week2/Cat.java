@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Created by macbook on 25.05.17.
  */
 public class Cat {
-    String name;
+    private String name;
     public static ArrayList <Cat> cats = new ArrayList<Cat>();
 
 

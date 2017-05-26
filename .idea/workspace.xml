@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5e8d791-5c28-41bc-893d-9b6132097920" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/Book.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/Edition.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/Person.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/Reader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/TestLib.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/comparator/AgePersonComparator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/comparator/AuthorEditionComparator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/comparator/NameEditionComparator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/comparator/NamePersonComparator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/comparator/SurNamePersonComparator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/comparator/YearOfIssueComparator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/week2/Cat.java" afterPath="$PROJECT_DIR$/src/main/java/week2/Cat.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -931,7 +919,7 @@
       <workItem from="1495657528995" duration="860000" />
       <workItem from="1495658491816" duration="400000" />
       <workItem from="1495718879203" duration="18160000" />
-      <workItem from="1495788307919" duration="11804000" />
+      <workItem from="1495788307919" duration="11867000" />
     </task>
     <task id="LOCAL-00001" summary="done tests and methods in ArrayList">
       <created>1495738186443</created>
@@ -947,7 +935,14 @@
       <option name="project" value="LOCAL" />
       <updated>1495740063885</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add Book, Edition, Person, Reader, comparator">
+      <created>1495818261915</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1495818261915</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -983,7 +978,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106862000" />
+    <option name="totallyTimeSpent" value="106925000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="712" extended-state="6" />
@@ -1056,7 +1051,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="done tests and methods in ArrayList" />
     <MESSAGE value="done Cats" />
-    <option name="LAST_COMMIT_MESSAGE" value="done Cats" />
+    <MESSAGE value="add Book, Edition, Person, Reader, comparator" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Book, Edition, Person, Reader, comparator" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

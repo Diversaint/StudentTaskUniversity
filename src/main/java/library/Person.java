@@ -15,6 +15,10 @@ public class Person implements Comparable<Object>{
     private int age;
     private TreeSet<Edition> editions;
 
+    {
+        editions = new TreeSet<>();
+    }
+
     public Person(String name, String surName, char sex, int age) {
         this.name = name;
         this.surName = surName;
@@ -85,6 +89,7 @@ public class Person implements Comparable<Object>{
     }
 
     public TreeSet<Edition> getEditions() {
+        //return editions;
         return new TreeSet(editions);
     }
 
@@ -96,7 +101,7 @@ public class Person implements Comparable<Object>{
                 ", sex=" + sex +
                 ", age=" + age +
                 ", edition=" + editions +
-                '}';
+                "}\n";
     }
 
     @Override
@@ -109,5 +114,21 @@ public class Person implements Comparable<Object>{
         compareToResult = this.age - person.age;
         return compareToResult;
 
+    }
+
+    public boolean addEdition(Edition edition) {
+        if (editions.add(edition)){
+            edition.setPerson(this);
+            return true;
+        }
+        return false;
+    }
+
+    public boolean returnEditionToLib(Edition edition){
+        if (editions.remove(edition)){
+            edition.setPerson(null);
+            return true;
+        }
+        return false;
     }
 }

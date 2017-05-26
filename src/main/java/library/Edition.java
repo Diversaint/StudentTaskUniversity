@@ -108,7 +108,7 @@ public class Edition implements Comparable<Object>{
                 ", yearOfIssue=" + yearOfIssue +
                 ", anotation='" + anotation + '\'' +
                 ", person=" + person +
-                '}';
+                "}\n";
     }
 
     @Override

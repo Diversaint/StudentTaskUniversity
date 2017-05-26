@@ -15,4 +15,11 @@ public class Book extends Edition{
         super(name, author, yearOfIssue, anotation);
         this.genre = genre;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "Book{" +
+                "genre='" + genre + '\'' +
+                '}';
+    }
 }

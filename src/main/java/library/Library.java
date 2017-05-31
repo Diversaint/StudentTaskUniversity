@@ -35,6 +35,10 @@ public class Library {
 
     public boolean addEditionInList(Edition edition){
         if (edition == null) return false;
+        if (edition.getPerson() != null) return false;
+        for (Edition edition1 : listEditions) {
+            if (edition == edition1) return false;
+        }
         return listEditions.add(edition);
     }
     /** Return sorted readers list (by comparator) and show it */

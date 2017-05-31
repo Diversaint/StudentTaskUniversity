@@ -1,4 +1,4 @@
-package week3;
+package library;
 
 import library.Book;
 import library.Edition;
@@ -42,11 +42,11 @@ public class TestLib {
 
         reader1.addEdition(bookStoic);
         reader1.addEdition(bookFinancier);
-        library.getAllEditionsAndShow(new NameEditionComparator());
-        library.getReadersAndShow(new NamePersonComparator());
-        library.showAndGetListAditionsFromReaders(new NameEditionComparator());
-        library.showAndGetListEditionsFromThisReader(new NameEditionComparator(), reader1);
-        library.showAndGetListEditionsByAuthorOrYear(1965, new YearOfIssueComparator());
+        library.getShowAllEditions(new NameEditionComparator());
+        library.getShowAllReaders(new NamePersonComparator());
+        library.showGetEditionsFromReaders(new NameEditionComparator());
+        library.showGetEditionsFromTheReader(new NameEditionComparator(), reader1);
+        library.findShowEditionsByAuthorOrYear(1965, new YearOfIssueComparator());
 
 
     }

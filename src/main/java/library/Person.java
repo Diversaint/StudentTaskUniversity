@@ -24,44 +24,6 @@ public class Person implements Comparable<Object>{
         this.age = age;
     }
 
- /*   public void setName(String name) {
-        Pattern alph = Pattern.compile("[a-zA-Z]+");
-        Matcher matcher = alph.matcher(name);
-        if (matcher.matches())
-            this.name = name;
-        else {
-            this.name = "";
-            System.out.println("For name use only letters");
-        }
-    }
-
-    public void setSurName(String surName) {
-        Pattern alph = Pattern.compile("[a-zA-Z]+");
-        Matcher matcher = alph.matcher(surName);
-        if (matcher.matches())
-            this.surName = surName;
-
-        else {
-            this.surName = "";
-            System.out.println("For surname use only letters");
-        }
-    }
-
-    public void setAge(int age) {
-        if (age > 14 && age < 60)
-            this.age = age;
-        else
-            System.out.println("Check typing age and try again");
-    }
-
-    public void setSex(char sex) {
-        if (sex == 'w' || sex == 'm')
-        this.sex = sex;
-        else{
-            System.out.println("Enter your sex w (woman) or m (man)");
-        }
-    }*/
-
     public Person(Person person) {
         if (person == null) return;
         this.name = person.name;
@@ -79,16 +41,11 @@ public class Person implements Comparable<Object>{
         return surName;
     }
 
-    public char getSex() {
-        return sex;
-    }
-
     public int getAge() {
         return age;
     }
 
     public ArrayList<Edition> getEditions() {
-        //return editions;
         return new ArrayList<>(editions);
     }
 
@@ -104,7 +61,7 @@ public class Person implements Comparable<Object>{
         return compareToResult;
 
     }
-
+    /** Add edition to person list */
     public boolean addEdition(Edition edition) {
         if (editions.add(edition)){
             edition.setPerson(this);
@@ -113,22 +70,10 @@ public class Person implements Comparable<Object>{
         return false;
     }
 
-/** Wait for task
-    public boolean returnEditionToLib(Edition edition){
-        if (editions.remove(edition)){
-            edition.setPerson(null);
-            return true;
-        }
-        return false;
-    }
-*/
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-
-        Person person = (Person) o;
         if (this.compareTo(o) == 0) return true;
         return false;
 

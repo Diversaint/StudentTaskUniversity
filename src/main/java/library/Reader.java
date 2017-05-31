@@ -19,11 +19,7 @@ public class Reader extends Person {
         super(name, surName, sex, age);
     }
 
-    public Reader(Person person) {
-        super(person);
-    }
-
-
+    /** Add edition to reader list. Quantity constraint. max editions = 3 */
     @Override
     public boolean addEdition(Edition edition) {
         if (isInBlackList) return false;

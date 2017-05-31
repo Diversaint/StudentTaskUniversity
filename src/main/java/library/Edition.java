@@ -14,25 +14,12 @@ public class Edition implements Comparable<Object>{
     private String anotation;
     private Person person;
 
-    /**
-     * Constructor without anotation
-     * @param name
-     * @param author
-     * @param yearOfIssue
-     */
     public Edition(String name, String author, int yearOfIssue) {
         this.name = name;
         this.author = author;
         this.yearOfIssue = yearOfIssue;
     }
 
-    /**
-     * Constructor. person will setup only by setter
-     * @param name
-     * @param author
-     * @param yearOfIssue
-     * @param anotation
-     */
     public Edition(String name, String author, int yearOfIssue, String anotation) {
         this.name = name;
         this.author = author;
@@ -47,37 +34,7 @@ public class Edition implements Comparable<Object>{
         this.anotation = edition.anotation;
         this.person = edition.person;
     }
-/*
 
-    public void setName(String name) {
-        this.name = name;
-    }
-    public void setAuthor(String author) {
-        Pattern alph = Pattern.compile("[a-zA-Z]+");
-        Matcher matcher = alph.matcher(this.author);
-        if (matcher.matches())
-            this.author = author;
-        else {
-            this.name = "";
-            System.out.println("For author name use only letters");
-        }
-    }
-    public void setYearOfIssue(int yearOfIssue) {
-        if (yearOfIssue > 1800 && yearOfIssue <= CURRENT_YEAR)
-        this.yearOfIssue = yearOfIssue;
-        else
-            System.out.println("Incorrect year of Issue");
-    }
-
-    public void setAnotation(String anotation) {
-        this.anotation = anotation;
-    }
-
-
-    public String getAnotation() {
-        return anotation;
-    }
-*/
     public void setPerson(Person person) {
         this.person = person;
     }

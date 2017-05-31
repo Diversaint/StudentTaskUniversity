@@ -1,8 +1,5 @@
 package library;
 
-import com.sun.org.apache.regexp.internal.RE;
-import library.comparator.NameEditionComparator;
-
 import java.util.ArrayList;
 import java.util.Comparator;
 
@@ -18,17 +15,12 @@ public class Library {
         listReaders = new ArrayList<>();
     }
 
-    public Library(ArrayList<Edition> listEditions, ArrayList<Reader> listReaders) {
-        this.listEditions = new ArrayList<>(listEditions);
-        this.listReaders = new ArrayList<>(listReaders);
-    }
-
     public ArrayList<Edition> getListEditions() {
-        return new ArrayList<Edition>(listEditions);
+        return new ArrayList(listEditions);
     }
 
     public ArrayList<Reader> getListReaders() {
-        return new ArrayList<Reader>(listReaders);
+        return new ArrayList(listReaders);
     }
 
     public boolean addReader(Reader reader){
@@ -41,38 +33,13 @@ public class Library {
     return false;
     }
 
-/*** Wait for task for this function. !!!Dont forget edition.person = null when remove Person
-    public boolean removeReader(Reader reader){
-        if (listReaders.size() == 0) return false;
-        for (Reader reader1 : listReaders)
-            if (reader.equals(reader1)) return listReaders.remove(reader);
-    return false;
-    }
-
-    public boolean revomeEditionFromList(Edition edition){
-    if (edition.getPerson() != null) return false;
-    for (Edition edition1 : listEditions) {
-    if (edition.compareTo(edition1) == 0 && edition1.getPerson() != null)
-    return listEditions.remove(edition);
-    }
-    return false;
-    }
- public boolean checkForReapetInList (Object object, TreeSet<Object> list) {
- if (object.getClass() == Reader.class)
- for (Reader reader :  (TreeSet<Reader>)list)
-
- for (Object object1 : list)
- return false;
- }
-
- */
-
     public boolean addEditionInList(Edition edition){
         if (edition == null) return false;
         return listEditions.add(edition);
     }
-
-    public ArrayList<Reader> getReadersAndShow(Comparator<Person> comparator){
+    /** Return sorted readers list (by comparator) and show it */
+    public ArrayList<Reader> getShowAllReaders(Comparator<Person> comparator){
+        if (comparator == null) return null;
         if (listReaders.size() == 0){
             System.out.println("No readers in list");
             return null;
@@ -85,10 +52,9 @@ public class Library {
             System.out.println(tempCount + "."+ reader.toString());
             tempCount++;
         }
-
         return getListReaders();
     }
-
+    /** Method for print edition list */
     private void showListEditions(ArrayList<Edition> listEditions){
         if (listEditions.size() == 0) System.out.println("No editions");
         int tempCount = 1;
@@ -100,15 +66,17 @@ public class Library {
 
 
     }
-    public ArrayList<Edition> getAllEditionsAndShow(Comparator<Edition> comparator){
-        if (listEditions.size() == 0) return null;
+    /** Return sorted edition list (by comparator) and show it */
+    public ArrayList<Edition> getShowAllEditions(Comparator<Edition> comparator){
+        if (listEditions.size() == 0 || comparator == null) return null;
         ArrayList <Edition> tempList = getListEditions();
         tempList.sort(comparator);
         showListEditions(tempList);
         return getListEditions();
     }
 
-    public boolean giveEditionToReader(Edition edition, Reader reader){
+    /** Give edition to reader. Check max editions in list of reader and check blacklist */
+    public boolean addEditionToReader(Edition edition, Reader reader){
         if (edition == null || reader== null) return false;
         if (reader.isInBlackList()) return false;
         if (reader.getEditions().size() == 3) return false;
@@ -116,7 +84,7 @@ public class Library {
         return reader.addEdition(edition);
     }
 
-
+    /** Add/remove reader to/from blacklist. Check reader already in list*/
     public boolean addReaderToBlacklist(Reader reader) {
         if (reader == null) return false;
         if (reader.isInBlackList()) return false;
@@ -130,8 +98,9 @@ public class Library {
         reader.setInBlackList(false);
         return true;
     }
-
-    public ArrayList<Edition> showAndGetListAditionsFromReaders(Comparator<Edition> comparator){
+    /** Return sorted(by comparator) list of editions that readers have and show it */
+    public ArrayList<Edition> showGetEditionsFromReaders(Comparator<Edition> comparator){
+        if (comparator == null) return null;
         ArrayList<Edition> tempList = new ArrayList();
         for (Edition edition : listEditions) {
             if (edition.getPerson() != null)
@@ -141,19 +110,18 @@ public class Library {
         showListEditions(tempList);
         return tempList;
     }
-
-    public ArrayList<Edition> showAndGetListEditionsFromThisReader(Comparator<Edition> comparator, Reader reader){
-        if (reader == null) return null;
+    /** Return sorted(by comparator) list of editions that the reader have and show it */
+    public ArrayList<Edition> showGetEditionsFromTheReader(Comparator<Edition> comparator, Reader reader){
+        if (reader == null || comparator == null) return null;
         if (reader.getEditions().size() == 0) return null;
         ArrayList<Edition> tempList = new ArrayList(reader.getEditions());
         tempList.sort(comparator);
         showListEditions(tempList);
         return tempList;
     }
-
-    public ArrayList<Edition> showAndGetListEditionsByAuthorOrYear(Object arg, Comparator<Edition> comparator){
-        if (arg == null) return null;
-
+    /** Return sorted(by comparator) list of editions search by author(if arg will be String) or year of issue(if arg will be int) */
+    public ArrayList<Edition> findShowEditionsByAuthorOrYear(Object arg, Comparator<Edition> comparator){
+        if (arg == null || comparator == null) return null;
         ArrayList<Edition> tempList = new ArrayList();
         if (arg instanceof String)
             for (Edition edition : listEditions) {
@@ -170,13 +138,13 @@ public class Library {
         showListEditions(tempList);
         return tempList;
     }
-
-    public ArrayList<Edition> findEditionByKeywords(Comparator<Edition> comparator, String ...keywords){
-        if (keywords == null) return null;
+    /** Return sorted(by comparator) list of editions search by keywords in all fields. Editions to String and contains with it*/
+    public ArrayList<Edition> findShowEditionByKeywords(Comparator<Edition> comparator, String ...keywords){
+        if (keywords == null || comparator == null) return null;
         ArrayList<Edition> tempList = new ArrayList();
         for (Edition edition : listEditions) {
-            for (String kyeword : keywords) {
-                if(edition.toString().contains(kyeword))
+            for (String keyword : keywords) {
+                if(edition.toString().contains(keyword))
                     tempList.add(edition);
             }
         }

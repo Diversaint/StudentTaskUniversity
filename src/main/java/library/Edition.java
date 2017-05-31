@@ -12,7 +12,7 @@ public class Edition implements Comparable<Object>{
     private String author;
     private int yearOfIssue;
     private String anotation;
-    Person person;
+    private Person person;
 
     /**
      * Constructor without anotation
@@ -47,6 +47,7 @@ public class Edition implements Comparable<Object>{
         this.anotation = edition.anotation;
         this.person = edition.person;
     }
+/*
 
     public void setName(String name) {
         this.name = name;
@@ -72,6 +73,11 @@ public class Edition implements Comparable<Object>{
         this.anotation = anotation;
     }
 
+
+    public String getAnotation() {
+        return anotation;
+    }
+*/
     public void setPerson(Person person) {
         this.person = person;
     }
@@ -88,28 +94,15 @@ public class Edition implements Comparable<Object>{
         return yearOfIssue;
     }
 
-    public String getAnotation() {
-        return anotation;
-    }
-
     /**
      * Return clone of person
      * @return
      */
     public Person getPerson() {
+        if (person == null) return null;
         return new Person(person);
     }
 
-    @Override
-    public String toString() {
-        return "Edition{" +
-                "name='" + name + '\'' +
-                ", author='" + author + '\'' +
-                ", yearOfIssue=" + yearOfIssue +
-                ", anotation='" + anotation + '\'' +
-                ", person=" + person +
-                "}\n";
-    }
 
     @Override
     public int compareTo(Object o) {
@@ -122,4 +115,23 @@ public class Edition implements Comparable<Object>{
         return compareToResult;
 
     }
+
+    @Override
+    public String toString() {
+        return "Edition" +
+                "name='" + name + '\'' +
+                ", author='" + author + '\'' +
+                ", yearOfIssue=" + yearOfIssue +
+                ", anotation='" + anotation + '\'';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (this.compareTo(o) == 0) return true;
+        return false;
+
+    }
+
 }

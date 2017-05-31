@@ -1,9 +1,7 @@
 package library;
 
 
-import java.util.TreeSet;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.ArrayList;
 
 /**
  * Created by macbook on 26.05.17.
@@ -13,10 +11,10 @@ public class Person implements Comparable<Object>{
     private String surName;
     private char sex;
     private int age;
-    private TreeSet<Edition> editions;
+    private ArrayList<Edition> editions;
 
     {
-        editions = new TreeSet<>();
+        editions = new ArrayList<>();
     }
 
     public Person(String name, String surName, char sex, int age) {
@@ -26,7 +24,7 @@ public class Person implements Comparable<Object>{
         this.age = age;
     }
 
-    public void setName(String name) {
+ /*   public void setName(String name) {
         Pattern alph = Pattern.compile("[a-zA-Z]+");
         Matcher matcher = alph.matcher(name);
         if (matcher.matches())
@@ -62,9 +60,10 @@ public class Person implements Comparable<Object>{
         else{
             System.out.println("Enter your sex w (woman) or m (man)");
         }
-    }
+    }*/
 
     public Person(Person person) {
+        if (person == null) return;
         this.name = person.name;
         this.age = person.age;
         this.surName = person.surName;
@@ -88,21 +87,11 @@ public class Person implements Comparable<Object>{
         return age;
     }
 
-    public TreeSet<Edition> getEditions() {
+    public ArrayList<Edition> getEditions() {
         //return editions;
-        return new TreeSet(editions);
+        return new ArrayList<>(editions);
     }
 
-    @Override
-    public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", surName='" + surName + '\'' +
-                ", sex=" + sex +
-                ", age=" + age +
-                ", edition=" + editions +
-                "}\n";
-    }
 
     @Override
     public int compareTo(Object o) {
@@ -124,11 +113,33 @@ public class Person implements Comparable<Object>{
         return false;
     }
 
+/** Wait for task
     public boolean returnEditionToLib(Edition edition){
         if (editions.remove(edition)){
             edition.setPerson(null);
             return true;
         }
         return false;
+    }
+*/
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Person person = (Person) o;
+        if (this.compareTo(o) == 0) return true;
+        return false;
+
+    }
+
+    @Override
+    public String toString() {
+        return
+                "name='" + name + "\t" +
+                "surName='" + surName + "\t" +
+                "sex=" + sex + "\t" +
+                "age=" + age;
     }
 }

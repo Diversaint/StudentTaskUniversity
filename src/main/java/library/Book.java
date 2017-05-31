@@ -18,8 +18,6 @@ public class Book extends Edition{
 
     @Override
     public String toString() {
-        return super.toString() + "Book{" +
-                "genre='" + genre + '\'' +
-                '}';
+        return "Book genre='" + genre + '\'' + super.toString();
     }
 }

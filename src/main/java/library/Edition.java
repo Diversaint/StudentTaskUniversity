@@ -59,6 +59,16 @@ public class Edition implements Comparable<Object>{
         if (person == null) return null;
         return new Person(person);
     }
+    /** Add final method for convert info about edition to String. Used in find edition by keywords */
+    public final String infoToString(){
+        StringBuffer info = new StringBuffer();
+        if (name != null) info = info.append(name);
+        if (author != null) info = info.append(author);
+        if (author != null) info = info.append(anotation);
+        if (yearOfIssue != 0) info = info.append(yearOfIssue);
+        return info.toString();
+
+    }
 
 
     @Override

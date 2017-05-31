@@ -144,7 +144,7 @@ public class Library {
         ArrayList<Edition> tempList = new ArrayList();
         for (Edition edition : listEditions) {
             for (String keyword : keywords) {
-                if(edition.toString().contains(keyword))
+                if(edition.infoToString().contains(keyword))
                     tempList.add(edition);
             }
         }

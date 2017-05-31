@@ -46,8 +46,13 @@ public class Person implements Comparable<Object>{
     }
 
     public ArrayList<Edition> getEditions() {
+        return editions;
+    }
+    /*
+    public ArrayList<Edition> getEditions() {
         return new ArrayList<>(editions);
     }
+*/
 
 
     @Override

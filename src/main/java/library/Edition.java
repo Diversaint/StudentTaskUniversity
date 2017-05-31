@@ -55,6 +55,11 @@ public class Edition implements Comparable<Object>{
      * Return clone of person
      * @return
      */
+/*
+    public Person getPerson() {
+        return person;
+    }
+*/
     public Person getPerson() {
         if (person == null) return null;
         return new Person(person);

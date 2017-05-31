@@ -29,9 +29,9 @@ public class LibraryTest {
     @Before
     public void setUp(){
         library = new Library();
-        bookFinancier = new Book("Financier", "Dreiser", 1990, "Roman");
-        bookTitan = new Book("Titan", "Dreiser", 1989, "Roman");
-        bookStoic = new Book("Stoic", "Dreiser", 1990, "Roman");
+        bookFinancier = new Book("Financier", "Dreiser", 1990, Genre.Romance);
+        bookTitan = new Book("Titan", "Dreiser", 1989, Genre.Romance);
+        bookStoic = new Book("Stoic", "Dreiser", 1990, Genre.Romance);
         constitution = new Edition("Constitution of Ukraine", "Goverment", 1991);
 
         reader1 = new Reader("James", "Bond", 'm', 52);
@@ -64,7 +64,7 @@ public class LibraryTest {
         assertTrue(library.addReader(reader1));
         assertTrue(library.addReader(reader2));
         assertTrue(library.addReader(reader3));
-        assertFalse(library.addReader(reader1));
+        assertFalse(library.addReader(reader2));
     }
     @Test
     public void test_add_reader_same_info(){
@@ -101,9 +101,23 @@ public class LibraryTest {
 
     @Test
     public void test_give_3_editions_to_reader(){
-        assertTrue(library.addEditionToReader(bookFinancier, reader1));
-        assertTrue(library.addEditionToReader(constitution, reader1));
-        assertTrue(library.addEditionToReader(bookTitan, reader1));
+
+        Edition bookFinancierCopy = new Book("Financier", "Dreiser", 1990, Genre.Romance);
+        Edition bookTitanCopy = new Book("Titan", "Dreiser", 1989, Genre.Romance);
+        Edition bookStoicCopy = new Book("Stoic", "Dreiser", 1990, Genre.Romance);
+
+        Reader readerCopy = new Reader("James", "Bond", 'm', 52);
+
+        library.addReader(reader1);
+        library.addEditionInList(bookFinancier);
+        assertTrue(library.addEditionToReader(bookFinancierCopy, readerCopy));
+        assertTrue(library.addEditionToReader(bookTitanCopy, readerCopy));
+        assertTrue(library.addEditionToReader(bookStoicCopy, readerCopy));
+
+        assertTrue(readerCopy.getEditions().size() == 3);
+        assertNotNull(bookFinancierCopy.getPerson());
+        assertNotNull(bookStoicCopy.getPerson());
+        assertNotNull(bookTitanCopy.getPerson());
     }
 
     @Test

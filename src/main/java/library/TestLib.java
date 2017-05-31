@@ -13,13 +13,14 @@ import library.comparator.YearOfIssueComparator;
  */
 public class TestLib {
     public static void main(String[] args) {
-        Book bookFinancier = new Book("Financier", "Dreiser", 1986, "Roman");
-        Book bookTitan = new Book("Titan", "Dreiser", 1965, "Roman");
-        Book bookStoic = new Book("Stoic", "Dreiser", 1999, "Roman");
+        Book bookFinancier = new Book("Financier", "Dreiser", 1986, Genre.Romance);
+        Book bookTitan = new Book("Titan", "Dreiser", 1965, Genre.Romance);
+        Book bookStoic = new Book("Stoic", "Dreiser", 1999, Genre.Romance);
         Edition constitution = new Edition("Constitution of Ukraine", "Goverment", 1991);
 
 
         Reader reader1 = new Reader("James", "Bond", 'm', 52);
+        Reader reader1Copy = new Reader("James", "Bond", 'm', 52);
         Reader reader2 = new Reader("James1", "Bond", 'm', 52);
         Reader reader3 = new Reader("James", "Bond2", 'm', 52);
         Reader reader4 = new Reader("James", "Bond", 'w', 52);
@@ -40,13 +41,8 @@ public class TestLib {
         library.addReader(reader5);
         library.addReader(reader6);
 
-        reader1.addEdition(bookStoic);
-        reader1.addEdition(bookFinancier);
-        library.getShowAllEditions(new NameEditionComparator());
-        library.getShowAllReaders(new NamePersonComparator());
-        library.showGetEditionsFromReaders(new NameEditionComparator());
-        library.showGetEditionsFromTheReader(new NameEditionComparator(), reader1);
-        library.findShowEditionsByAuthorOrYear(1965, new YearOfIssueComparator());
+        library.addEditionToReader(bookStoic, reader1Copy);
+
 
 
     }

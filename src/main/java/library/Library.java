@@ -1,5 +1,7 @@
 package library;
 
+import data_structure.EditionList;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 
@@ -7,8 +9,11 @@ import java.util.Comparator;
  * Created by macbook on 26.05.17.
  */
 public class Library {
-    private ArrayList<Edition> listEditions;
+    private EditionList listEditions;
     private ArrayList <Reader> listReaders;
+    private static final int MAX_NUMBER_OF_EDITIONS = 3;
+    private int tempIndex;
+
 
     public Library() {
         listEditions = new ArrayList<>();
@@ -20,7 +25,7 @@ public class Library {
     }
 
     public ArrayList<Reader> getListReaders() {
-        return new ArrayList(listReaders);
+        return new ArrayList<>(listReaders);
     }
 
     public boolean addReader(Reader reader){
@@ -28,9 +33,9 @@ public class Library {
         if (listReaders.size() == 0) return listReaders.add(reader);
         for (Reader reader1 : listReaders) {
             if (reader.equals(reader1)) return false;
-            if (listReaders.add(reader)) return true;
         }
-    return false;
+        if (listReaders.add(reader)) return true;
+        return false;
     }
 
     public boolean addEditionInList(Edition edition){
@@ -81,9 +86,15 @@ public class Library {
 
     /** Give edition to reader. Check max editions in list of reader and check blacklist */
     public boolean addEditionToReader(Edition edition, Reader reader){
+        edition = listEditions.indexOf(edition) > 0 ? listEditions.get(listEditions.indexOf(edition)) : null;
+        reader = listReaders.indexOf(reader) > 0 ? listReaders.get(listReaders.indexOf(reader)) : null;
         if (edition == null || reader== null) return false;
+        //tempIndex > 0 ? tempIndex = 1 : false;
+        //> 0 ? tempIndex = listEditions.indexOf(edition) : tempIndex = 0;
+
+        if (!listEditions.contains(edition) || !listReaders.contains(reader)) return false;
         if (reader.isInBlackList()) return false;
-        if (reader.getEditions().size() == 3) return false;
+        if (reader.getEditions().size() == MAX_NUMBER_OF_EDITIONS) return false;
         if (edition.getPerson() != null) return false;
         return reader.addEdition(edition);
     }

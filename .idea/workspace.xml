@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5e8d791-5c28-41bc-893d-9b6132097920" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/data_structure/EditionList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/data_structure/EditionList.java" afterPath="$PROJECT_DIR$/src/main/java/data_structure/EditionList.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/library/Edition.java" afterPath="$PROJECT_DIR$/src/main/java/library/Edition.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/library/Library.java" afterPath="$PROJECT_DIR$/src/main/java/library/Library.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/library/Person.java" afterPath="$PROJECT_DIR$/src/main/java/library/Person.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/library/TestLib.java" afterPath="$PROJECT_DIR$/src/main/java/library/TestLib.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/library/LibraryTest.java" afterPath="$PROJECT_DIR$/src/main/test/library/LibraryTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -47,63 +44,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MyArrayList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/data_structure/MyArrayList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="35" column="27" lean-forward="false" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Library.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/library/Library.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="86" column="34" lean-forward="true" selection-start-line="86" selection-start-column="34" selection-end-line="86" selection-end-column="34" />
+            <state relative-caret-position="-413">
+              <caret line="121" column="49" lean-forward="true" selection-start-line="121" selection-start-column="49" selection-end-line="121" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#472#473#0" expanded="true" />
+                <element signature="e#524#525#0" expanded="true" />
+                <element signature="e#573#574#0" expanded="true" />
+                <element signature="e#624#625#0" expanded="true" />
+                <element signature="e#4124#4125#0" expanded="true" />
+                <element signature="e#4179#4180#0" expanded="true" />
+                <element signature="e#4236#4237#0" expanded="true" />
+                <element signature="e#4292#4293#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EditionList.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/data_structure/EditionList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#257#258#0" expanded="true" />
-                <element signature="e#295#296#0" expanded="true" />
-                <element signature="e#348#349#0" expanded="true" />
-                <element signature="e#372#373#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Object.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/Object.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="147" column="19" lean-forward="false" selection-start-line="147" selection-start-column="19" selection-end-line="147" selection-end-column="19" />
-              <folding>
-                <element signature="e#5748#5749#0" expanded="true" />
-                <element signature="e#5784#5785#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -111,7 +67,7 @@
       <file leaf-file-name="TestLib.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/library/TestLib.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
+            <state relative-caret-position="429">
               <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -120,26 +76,67 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LibraryTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Reader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/library/Reader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LibraryTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/test/library/LibraryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1425">
-              <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+            <state relative-caret-position="1200">
+              <caret line="93" column="39" lean-forward="false" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#test_add_reader_same_info#0;class#LibraryTest#0" expanded="false" />
+                <element signature="e#3220#3221#0" expanded="true" />
+                <element signature="e#3295#3296#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Edition.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/library/Edition.java">
+      <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-920">
-              <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="316" column="25" lean-forward="false" selection-start-line="316" selection-start-column="25" selection-end-line="316" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Object.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/Object.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="31">
+              <caret line="143" column="16" lean-forward="true" selection-start-line="143" selection-start-column="16" selection-end-line="143" selection-end-column="16" />
               <folding>
-                <element signature="method#Edition#2;class#Edition#0" expanded="false" />
+                <element signature="e#5748#5749#0" expanded="true" />
+                <element signature="e#5784#5785#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EditionList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/data_structure/EditionList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#292#293#0" expanded="true" />
+                <element signature="e#316#317#0" expanded="true" />
+                <element signature="e#490#491#0" expanded="true" />
+                <element signature="e#528#529#0" expanded="true" />
+                <element signature="e#587#588#0" expanded="true" />
+                <element signature="e#633#634#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -148,12 +145,26 @@
       <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/library/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-118">
-              <caret line="48" column="13" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state relative-caret-position="126">
+              <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
               <folding>
                 <element signature="method#Person#0;class#Person#0" expanded="false" />
-                <element signature="e#984#985#0" expanded="true" />
-                <element signature="e#1015#1016#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Edition.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/library/Edition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="108" column="48" lean-forward="false" selection-start-line="108" selection-start-column="48" selection-end-line="108" selection-end-column="48" />
+              <folding>
+                <element signature="method#Edition#2;class#Edition#0" expanded="false" />
+                <element signature="e#1334#1335#0" expanded="true" />
+                <element signature="e#1365#1366#0" expanded="true" />
+                <element signature="e#1410#1411#0" expanded="true" />
+                <element signature="e#1450#1451#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -199,7 +210,15 @@
       <find>MAX_NUMBER_OF_EDITIONS</find>
       <find>3</find>
       <find>?</find>
+      <find>listEditions</find>
+      <find>ArrayList&lt;Edition&gt;</find>
+      <find>ArrayList &lt;Edition&gt;</find>
+      <find>eq</find>
+      <find>addEd</find>
     </findStrings>
+    <replaceStrings>
+      <replace>EditionList</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -258,11 +277,11 @@
         <option value="$PROJECT_DIR$/src/main/java/library/Genre.java" />
         <option value="$PROJECT_DIR$/src/main/java/library/Book.java" />
         <option value="$PROJECT_DIR$/src/main/java/library/Person.java" />
-        <option value="$PROJECT_DIR$/src/main/java/library/Edition.java" />
         <option value="$PROJECT_DIR$/src/main/java/library/TestLib.java" />
-        <option value="$PROJECT_DIR$/src/main/java/library/Library.java" />
-        <option value="$PROJECT_DIR$/src/main/test/library/LibraryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/data_structure/EditionList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/library/Edition.java" />
+        <option value="$PROJECT_DIR$/src/main/test/library/LibraryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/library/Library.java" />
       </list>
     </option>
   </component>
@@ -513,7 +532,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LibraryTest.test_give_3_editions_to_reader">
+  <component name="RunManager" selected="JUnit.LibraryTest">
+    <configuration default="false" name="LibraryTest.test_find_editions_by_year_by_size" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="library.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ACO20" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="library" />
+      <option name="MAIN_CLASS_NAME" value="library.LibraryTest" />
+      <option name="METHOD_NAME" value="test_find_editions_by_year_by_size" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="false" name="LibraryTest.test_find_editions_by_key_by_size" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -566,7 +611,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="LibraryTest.test_add_same_reader" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="LibraryTest.test_show_editions_from_readers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="library.*" />
@@ -578,7 +623,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="library" />
       <option name="MAIN_CLASS_NAME" value="library.LibraryTest" />
-      <option name="METHOD_NAME" value="test_add_same_reader" />
+      <option name="METHOD_NAME" value="test_show_editions_from_readers" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -592,7 +637,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="LibraryTest.test_give_3_editions_to_reader" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="LibraryTest.test_add_same_edition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="library.*" />
@@ -604,7 +649,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="library" />
       <option name="MAIN_CLASS_NAME" value="library.LibraryTest" />
-      <option name="METHOD_NAME" value="test_give_3_editions_to_reader" />
+      <option name="METHOD_NAME" value="test_add_same_edition" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -616,26 +661,6 @@
       </option>
       <envs />
       <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestLib" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="library.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="library.TestLib" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="ACO20" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -1026,19 +1051,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.LibraryTest.test_find_editions_by_key_by_size" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.LibraryTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.LibraryTest.test_add_same_reader" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.LibraryTest.test_give_3_editions_to_reader" />
-      <item index="4" class="java.lang.String" itemvalue="Application.TestLib" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.LibraryTest.test_find_editions_by_year_by_size" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.LibraryTest.test_find_editions_by_key_by_size" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.LibraryTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.LibraryTest.test_show_editions_from_readers" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.LibraryTest.test_add_same_edition" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.LibraryTest.test_give_3_editions_to_reader" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TestLib" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.LibraryTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.LibraryTest.test_add_same_reader" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.LibraryTest.test_find_editions_by_key_by_size" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.LibraryTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.LibraryTest.test_add_same_edition" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.LibraryTest.test_show_editions_from_readers" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.LibraryTest.test_find_editions_by_key_by_size" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.LibraryTest.test_find_editions_by_year_by_size" />
       </list>
     </recent_temporary>
   </component>
@@ -1105,39 +1130,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LibraryTest - 2017.05.31 at 19h 58m 15s.xml">
+    <history-entry file="LibraryTest - 2017.06.01 at 10h 56m 35s.xml">
       <configuration name="LibraryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryTest - 2017.05.31 at 20h 02m 32s.xml">
+    <history-entry file="LibraryTest - 2017.06.01 at 12h 07m 40s.xml">
       <configuration name="LibraryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryTest - 2017.05.31 at 20h 03m 19s.xml">
-      <configuration name="LibraryTest" configurationId="JUnit" />
+    <history-entry file="LibraryTest_test_add_same_edition - 2017.06.01 at 11h 54m 00s.xml">
+      <configuration name="LibraryTest.test_add_same_edition" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryTest_test_give_3_editions_to_reader - 2017.05.31 at 19h 26m 59s.xml">
-      <configuration name="LibraryTest.test_give_3_editions_to_reader" configurationId="JUnit" />
+    <history-entry file="LibraryTest_test_add_same_edition - 2017.06.01 at 11h 56m 45s.xml">
+      <configuration name="LibraryTest.test_add_same_edition" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryTest_test_give_3_editions_to_reader - 2017.05.31 at 19h 28m 44s.xml">
-      <configuration name="LibraryTest.test_give_3_editions_to_reader" configurationId="JUnit" />
+    <history-entry file="LibraryTest_test_add_same_edition - 2017.06.01 at 12h 02m 06s.xml">
+      <configuration name="LibraryTest.test_add_same_edition" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryTest_test_give_3_editions_to_reader - 2017.05.31 at 19h 29m 06s.xml">
-      <configuration name="LibraryTest.test_give_3_editions_to_reader" configurationId="JUnit" />
+    <history-entry file="LibraryTest_test_add_same_edition - 2017.06.01 at 12h 02m 56s.xml">
+      <configuration name="LibraryTest.test_add_same_edition" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryTest_test_give_3_editions_to_reader - 2017.05.31 at 19h 29m 51s.xml">
-      <configuration name="LibraryTest.test_give_3_editions_to_reader" configurationId="JUnit" />
+    <history-entry file="LibraryTest_test_add_same_edition - 2017.06.01 at 12h 03m 19s.xml">
+      <configuration name="LibraryTest.test_add_same_edition" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryTest_test_give_3_editions_to_reader - 2017.05.31 at 19h 30m 17s.xml">
-      <configuration name="LibraryTest.test_give_3_editions_to_reader" configurationId="JUnit" />
+    <history-entry file="LibraryTest_test_find_editions_by_key_by_size - 2017.06.01 at 10h 56m 25s.xml">
+      <configuration name="LibraryTest.test_find_editions_by_key_by_size" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryTest_test_give_3_editions_to_reader - 2017.05.31 at 21h 22m 31s.xml">
-      <configuration name="LibraryTest.test_give_3_editions_to_reader" configurationId="JUnit" />
+    <history-entry file="LibraryTest_test_find_editions_by_year_by_size - 2017.06.01 at 10h 56m 11s.xml">
+      <configuration name="LibraryTest.test_find_editions_by_year_by_size" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryTest_test_give_3_editions_to_reader - 2017.05.31 at 21h 23m 37s.xml">
-      <configuration name="LibraryTest.test_give_3_editions_to_reader" configurationId="JUnit" />
+    <history-entry file="LibraryTest_test_show_editions_from_readers - 2017.06.01 at 10h 56m 56s.xml">
+      <configuration name="LibraryTest.test_show_editions_from_readers" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188065000" />
+    <option name="totallyTimeSpent" value="199306000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="712" extended-state="0" />
@@ -1155,14 +1180,14 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33592534" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33592534" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281493" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27371696" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27371696" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281493" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19296876" sideWeight="0.49455675" order="0" side_tool="false" content_ui="combo" />
@@ -1261,14 +1286,8 @@
           <properties />
           <option name="timeStamp" value="43" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/test/library/LibraryTest.java</url>
-          <line>112</line>
-          <properties />
-          <option name="timeStamp" value="85" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="87" />
+      <option name="time" value="90" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1277,62 +1296,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/week1/homework/inheritance/doctor/Surgeon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="36" column="83" lean-forward="false" selection-start-line="36" selection-start-column="83" selection-end-line="36" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editions.uml">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>week1.homework.inheritance.edition</OriginalElement>
-          <nodes>
-            <node x="528.1805555555555" y="0.0">week1.homework.inheritance.edition.Edition</node>
-            <node x="422.0" y="403.5">week1.homework.inheritance.edition.Encyclopedia</node>
-            <node x="0.0" y="392.0">week1.homework.inheritance.edition.Directory</node>
-            <node x="543.9166666666666" y="589.0">week1.homework.inheritance.edition.TestEdition</node>
-            <node x="394.18055555555554" y="103.0">week1.homework.inheritance.edition.Book</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="week1.homework.inheritance.edition.Book" target="week1.homework.inheritance.edition.Edition">
-              <point x="0.0" y="-119.5" />
-              <point x="0.0" y="26.5" />
-            </edge>
-            <edge source="week1.homework.inheritance.edition.Directory" target="week1.homework.inheritance.edition.Book">
-              <point x="0.0" y="-73.5" />
-              <point x="201.0" y="367.0" />
-              <point x="464.0138888888889" y="367.0" />
-              <point x="-139.66666666666663" y="119.5" />
-            </edge>
-            <edge source="week1.homework.inheritance.edition.Encyclopedia" target="week1.homework.inheritance.edition.Book">
-              <point x="0.0" y="-62.0" />
-              <point x="614.0" y="367.0" />
-              <point x="603.6805555555555" y="367.0" />
-              <point x="0.0" y="119.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.8" x="188.0" y="356.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Inner Classes</Category>
-            <Category>Constructors</Category>
-            <Category>Properties</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/week1/homework/inheritance/edition/Edition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1355,6 +1323,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5316">
           <caret line="108" column="17" lean-forward="false" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1599,10 +1568,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/library/Genre.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="97" lean-forward="false" selection-start-line="6" selection-start-column="97" selection-end-line="6" selection-end-column="97" />
+        <state relative-caret-position="342">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/AbstractList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="511" column="19" lean-forward="false" selection-start-line="511" selection-start-column="19" selection-end-line="511" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1615,6 +1592,107 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/Genre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="97" lean-forward="false" selection-start-line="6" selection-start-column="97" selection-end-line="6" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/data_structure/MyArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="35" column="58" lean-forward="false" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="1152" column="15" lean-forward="false" selection-start-line="1152" selection-start-column="15" selection-end-line="1152" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/TestLib.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding>
+            <element signature="method#Person#0;class#Person#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="316" column="25" lean-forward="false" selection-start-line="316" selection-start-column="25" selection-end-line="316" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="143" column="16" lean-forward="true" selection-start-line="143" selection-start-column="16" selection-end-line="143" selection-end-column="16" />
+          <folding>
+            <element signature="e#5748#5749#0" expanded="true" />
+            <element signature="e#5784#5785#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/data_structure/EditionList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+            <element signature="e#316#317#0" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+            <element signature="e#633#634#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/Edition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="108" column="48" lean-forward="false" selection-start-line="108" selection-start-column="48" selection-end-line="108" selection-end-column="48" />
+          <folding>
+            <element signature="method#Edition#2;class#Edition#0" expanded="false" />
+            <element signature="e#1334#1335#0" expanded="true" />
+            <element signature="e#1365#1366#0" expanded="true" />
+            <element signature="e#1410#1411#0" expanded="true" />
+            <element signature="e#1450#1451#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/Reader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$PROJECT_DIR$/../libs/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1623,112 +1701,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/library/Reader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/Library.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/data_structure/MyArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="35" column="27" lean-forward="false" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/library/TestLib.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state relative-caret-position="-413">
+          <caret line="121" column="49" lean-forward="true" selection-start-line="121" selection-start-column="49" selection-end-line="121" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="316" column="24" lean-forward="true" selection-start-line="316" selection-start-column="24" selection-end-line="316" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="147" column="19" lean-forward="false" selection-start-line="147" selection-start-column="19" selection-end-line="147" selection-end-column="19" />
-          <folding>
-            <element signature="e#5748#5749#0" expanded="true" />
-            <element signature="e#5784#5785#0" expanded="true" />
+            <element signature="e#472#473#0" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#624#625#0" expanded="true" />
+            <element signature="e#4124#4125#0" expanded="true" />
+            <element signature="e#4179#4180#0" expanded="true" />
+            <element signature="e#4236#4237#0" expanded="true" />
+            <element signature="e#4292#4293#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/test/library/LibraryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+        <state relative-caret-position="1200">
+          <caret line="93" column="39" lean-forward="false" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#test_add_reader_same_info#0;class#LibraryTest#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/library/Edition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-920">
-          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="method#Edition#2;class#Edition#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/library/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-118">
-          <caret line="48" column="13" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding>
-            <element signature="method#Person#0;class#Person#0" expanded="false" />
-            <element signature="e#984#985#0" expanded="true" />
-            <element signature="e#1015#1016#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/library/Library.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="86" column="34" lean-forward="true" selection-start-line="86" selection-start-column="34" selection-end-line="86" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/data_structure/EditionList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#257#258#0" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#348#349#0" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#3220#3221#0" expanded="true" />
+            <element signature="e#3295#3296#0" expanded="true" />
           </folding>
         </state>
       </provider>

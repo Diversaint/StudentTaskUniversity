@@ -85,6 +85,17 @@ public class LibraryTest {
     }
 
     @Test
+    public void test_add_same_edition(){
+        assertTrue(library.addReader(reader1));
+        assertTrue(library.addEditionInList(bookFinancier));
+        Edition bookFinancierCopy = new Book("Financier", "Dreiser", 1990, Genre.Romance);
+        assertTrue(library.addEditionToReader(bookFinancierCopy, reader1));
+        assertTrue(library.addEditionInList(bookFinancierCopy));
+        assertTrue(library.addEditionToReader(bookFinancierCopy, reader1));
+        assertFalse(library.addEditionInList(bookFinancier));
+    }
+
+    @Test
     public void test_give_edition_to_reader_null(){
         assertFalse(library.addEditionToReader(constitution, null));
     }
@@ -95,6 +106,8 @@ public class LibraryTest {
 
     @Test
     public void test_give_edition_to_reader_in_blacklist(){
+        assertTrue(library.addReader(reader4Same1));
+        assertTrue(library.addEditionInList(constitution));
         assertTrue(library.addReaderToBlacklist(reader1));
         assertFalse(library.addEditionToReader(constitution, reader1));
     }
@@ -106,22 +119,34 @@ public class LibraryTest {
         Edition bookTitanCopy = new Book("Titan", "Dreiser", 1989, Genre.Romance);
         Edition bookStoicCopy = new Book("Stoic", "Dreiser", 1990, Genre.Romance);
 
-        Reader readerCopy = new Reader("James", "Bond", 'm', 52);
+        Reader readerCopy = new Reader("James", "Bond", 'm', 18);
 
+        library.addReader(reader6);
+        library.addReader(reader2);
         library.addReader(reader1);
+        library.addReader(reader5);
+
         library.addEditionInList(bookFinancier);
+        library.addEditionInList(constitution);
+        library.addEditionInList(bookStoic);
+        library.addEditionInList(bookTitan);
+
         assertTrue(library.addEditionToReader(bookFinancierCopy, readerCopy));
         assertTrue(library.addEditionToReader(bookTitanCopy, readerCopy));
         assertTrue(library.addEditionToReader(bookStoicCopy, readerCopy));
 
-        assertTrue(readerCopy.getEditions().size() == 3);
-        assertNotNull(bookFinancierCopy.getPerson());
-        assertNotNull(bookStoicCopy.getPerson());
-        assertNotNull(bookTitanCopy.getPerson());
+        assertTrue(reader6.getEditions().size() == 3);
+        assertNotNull(bookFinancier.getPerson());
+        assertNotNull(bookStoic.getPerson());
+        assertNotNull(bookTitan.getPerson());
     }
 
     @Test
     public void test_give_edition_to_reader_which_have_3_books(){
+        assertTrue(library.addEditionInList(bookFinancier));
+        assertTrue(library.addEditionInList(bookTitan));
+        assertTrue(library.addEditionInList(bookStoic));
+        assertTrue(library.addReader(reader1));
         assertTrue(library.addEditionToReader(bookFinancier, reader1));
         assertTrue(library.addEditionToReader(bookStoic, reader1));
         assertTrue(library.addEditionToReader(bookTitan, reader1));
@@ -130,17 +155,24 @@ public class LibraryTest {
 
     @Test
     public void test_give_edition_which_not_in_stock_to_reader(){
+        assertTrue(library.addEditionInList(bookFinancier));
+        assertTrue(library.addReader(reader1));
+        assertTrue(library.addReader(reader2));
         assertTrue(library.addEditionToReader(bookFinancier, reader1));
         assertFalse(library.addEditionToReader(bookFinancier, reader2));
     }
     @Test
     public void test_give_edition_to_reader(){
+        assertTrue(library.addReader(reader1));
+        assertTrue(library.addEditionInList(bookFinancier));
+        assertTrue(library.addEditionInList(constitution));
         assertTrue(library.addEditionToReader(bookFinancier, reader1));
         assertTrue(library.addEditionToReader(constitution, reader1));
     }
 
     @Test
     public void test_add_to_black_list(){
+        assertTrue(library.addReader(reader1));
         assertTrue(library.addReaderToBlacklist(reader1));
     }
     @Test
@@ -149,11 +181,13 @@ public class LibraryTest {
     }
     @Test
     public void test_add_to_black_list_already_in_list(){
+        assertTrue(library.addReader(reader4Same1));
         assertTrue(library.addReaderToBlacklist(reader1));
         assertFalse(library.addReaderToBlacklist(reader1));
     }
     @Test
     public void test_remove_from_black_list(){
+        assertTrue(library.addReader(reader4Same1));
         assertTrue(library.addReaderToBlacklist(reader1));
         assertTrue(library.removeFromBlackList(reader1));
     }
@@ -211,6 +245,8 @@ public class LibraryTest {
     }
     @Test
     public void test_show_editions_from_readers(){
+        assertTrue(library.addReader(reader1));
+        assertTrue(library.addReader(reader2));
         assertTrue(library.addEditionInList(bookTitan));
         assertTrue(library.addEditionInList(bookFinancier));
         assertTrue(library.addEditionInList(bookStoic));
@@ -249,6 +285,7 @@ public class LibraryTest {
 
     @Test
     public void test_show_editions_from_the_reader(){
+        assertTrue(library.addReader(reader1));
         assertTrue(library.addEditionInList(bookTitan));
         assertTrue(library.addEditionInList(bookFinancier));
         assertTrue(library.addEditionInList(bookStoic));
@@ -270,6 +307,8 @@ public class LibraryTest {
 
     @Test
     public void test_find_editions_by_author_by_size(){
+        assertTrue(library.addReader(reader1));
+        assertTrue(library.addReader(reader2));
         assertTrue(library.addEditionInList(bookTitan));
         assertTrue(library.addEditionInList(bookFinancier));
         assertTrue(library.addEditionInList(bookStoic));
@@ -281,6 +320,8 @@ public class LibraryTest {
     }
     @Test
     public void test_find_editions_by_year_by_size(){
+        assertTrue(library.addReader(reader1));
+        assertTrue(library.addReader(reader2));
         assertTrue(library.addEditionInList(bookTitan));
         assertTrue(library.addEditionInList(bookFinancier));
         assertTrue(library.addEditionInList(bookStoic));
@@ -302,6 +343,8 @@ public class LibraryTest {
 
     @Test
     public void test_find_editions_by_key_by_size(){
+        assertTrue(library.addReader(reader1));
+        assertTrue(library.addReader(reader2));
         assertTrue(library.addEditionInList(bookTitan));
         assertTrue(library.addEditionInList(bookFinancier));
         assertTrue(library.addEditionInList(bookStoic));

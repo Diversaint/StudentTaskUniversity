@@ -13,6 +13,7 @@ public class Edition implements Comparable<Object>{
     private int yearOfIssue;
     private String anotation;
     private Person person;
+    private int exemplar = 1;
 
     public Edition(String name, String author, int yearOfIssue) {
         this.name = name;
@@ -51,6 +52,14 @@ public class Edition implements Comparable<Object>{
         return yearOfIssue;
     }
 
+    public int getExemplar() {
+        return exemplar;
+    }
+
+    public void setExemplar(int exemplar) {
+        this.exemplar = exemplar;
+    }
+
     /**
      * Return clone of person
      * @return
@@ -84,6 +93,8 @@ public class Edition implements Comparable<Object>{
         compareToResult = this.author.compareTo(edition.author);
         if (compareToResult != 0) return compareToResult;
         compareToResult = this.yearOfIssue - edition.yearOfIssue;
+        if (compareToResult != 0) return compareToResult;
+        compareToResult = this.exemplar - edition.exemplar;
         return compareToResult;
 
     }
@@ -94,7 +105,8 @@ public class Edition implements Comparable<Object>{
                 "name='" + name + '\'' +
                 ", author='" + author + '\'' +
                 ", yearOfIssue=" + yearOfIssue +
-                ", anotation='" + anotation + '\'';
+                ", anotation='" + anotation + '\'' +
+                "copy number=" + exemplar + '\'';
     }
 
     @Override

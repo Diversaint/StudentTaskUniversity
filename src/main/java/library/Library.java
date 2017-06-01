@@ -12,16 +12,14 @@ public class Library {
     private EditionList listEditions;
     private ArrayList <Reader> listReaders;
     private static final int MAX_NUMBER_OF_EDITIONS = 3;
-    private int tempIndex;
-
 
     public Library() {
-        listEditions = new ArrayList<>();
+        listEditions = new EditionList();
         listReaders = new ArrayList<>();
     }
 
-    public ArrayList<Edition> getListEditions() {
-        return new ArrayList(listEditions);
+    public EditionList getListEditions() {
+        return new EditionList(listEditions);
     }
 
     public ArrayList<Reader> getListReaders() {
@@ -31,18 +29,18 @@ public class Library {
     public boolean addReader(Reader reader){
         if (reader == null) return false;
         if (listReaders.size() == 0) return listReaders.add(reader);
-        for (Reader reader1 : listReaders) {
-            if (reader.equals(reader1)) return false;
-        }
+        if (listReaders.contains(reader)) return false;
         if (listReaders.add(reader)) return true;
         return false;
     }
-
+    /** Fixed! Add edition in list. Check if same edition(object) edition == edition in list). If edition equals edition
+     * in list add to list and copy number(exampler) +1 */
     public boolean addEditionInList(Edition edition){
         if (edition == null) return false;
         if (edition.getPerson() != null) return false;
         for (Edition edition1 : listEditions) {
             if (edition == edition1) return false;
+            if (edition.equals(edition1)) edition.setExemplar(edition.getExemplar() + 1);
         }
         return listEditions.add(edition);
     }
@@ -64,7 +62,7 @@ public class Library {
         return getListReaders();
     }
     /** Method for print edition list */
-    private void showListEditions(ArrayList<Edition> listEditions){
+    private void showListEditions(EditionList listEditions){
         if (listEditions.size() == 0) System.out.println("No editions");
         int tempCount = 1;
         System.out.println(listEditions.size() + " editions in list");
@@ -76,9 +74,9 @@ public class Library {
 
     }
     /** Return sorted edition list (by comparator) and show it */
-    public ArrayList<Edition> getShowAllEditions(Comparator<Edition> comparator){
+    public EditionList getShowAllEditions(Comparator<Edition> comparator){
         if (listEditions.size() == 0 || comparator == null) return null;
-        ArrayList <Edition> tempList = getListEditions();
+        EditionList tempList = getListEditions();
         tempList.sort(comparator);
         showListEditions(tempList);
         return getListEditions();
@@ -86,8 +84,10 @@ public class Library {
 
     /** Give edition to reader. Check max editions in list of reader and check blacklist */
     public boolean addEditionToReader(Edition edition, Reader reader){
-        edition = listEditions.indexOf(edition) > 0 ? listEditions.get(listEditions.indexOf(edition)) : null;
-        reader = listReaders.indexOf(reader) > 0 ? listReaders.get(listReaders.indexOf(reader)) : null;
+        if (edition == null || reader== null) return false;
+        /** Check for arg == object in list */
+        edition = listEditions.indexOf(edition) >= 0 ? listEditions.get(listEditions.indexOf(edition)) : null;
+        reader = listReaders.indexOf(reader) >= 0 ? listReaders.get(listReaders.indexOf(reader)) : null;
         if (edition == null || reader== null) return false;
         //tempIndex > 0 ? tempIndex = 1 : false;
         //> 0 ? tempIndex = listEditions.indexOf(edition) : tempIndex = 0;
@@ -99,24 +99,27 @@ public class Library {
         return reader.addEdition(edition);
     }
 
-    /** Add/remove reader to/from blacklist. Check reader already in list*/
+    /** Add/remove reader to/from blacklist. Check reader already in list. */
     public boolean addReaderToBlacklist(Reader reader) {
-        if (reader == null) return false;
-        if (reader.isInBlackList()) return false;
-        reader.setInBlackList(true);
-        return true;
+        return addRemoveBlacklist(reader, true);
     }
 
     public boolean removeFromBlackList(Reader reader) {
+        return addRemoveBlacklist(reader, false);
+    }
+
+    private boolean addRemoveBlacklist(Reader reader, boolean addRemove){
         if (reader == null) return false;
-        if (!reader.isInBlackList()) return false;
-        reader.setInBlackList(false);
+        reader = listReaders.indexOf(reader) >= 0 ? listReaders.get(listReaders.indexOf(reader)) : null;
+        if (reader == null) return false;
+        if (reader.isInBlackList() == addRemove) return false;
+        reader.setInBlackList(addRemove);
         return true;
     }
     /** Return sorted(by comparator) list of editions that readers have and show it */
-    public ArrayList<Edition> showGetEditionsFromReaders(Comparator<Edition> comparator){
+    public EditionList showGetEditionsFromReaders(Comparator<Edition> comparator){
         if (comparator == null) return null;
-        ArrayList<Edition> tempList = new ArrayList();
+        EditionList tempList = new EditionList();
         for (Edition edition : listEditions) {
             if (edition.getPerson() != null)
                 tempList.add(edition);
@@ -126,18 +129,18 @@ public class Library {
         return tempList;
     }
     /** Return sorted(by comparator) list of editions that the reader have and show it */
-    public ArrayList<Edition> showGetEditionsFromTheReader(Comparator<Edition> comparator, Reader reader){
+    public EditionList showGetEditionsFromTheReader(Comparator<Edition> comparator, Reader reader){
         if (reader == null || comparator == null) return null;
         if (reader.getEditions().size() == 0) return null;
-        ArrayList<Edition> tempList = new ArrayList(reader.getEditions());
+        EditionList tempList = new EditionList(reader.getEditions());
         tempList.sort(comparator);
         showListEditions(tempList);
         return tempList;
     }
     /** Return sorted(by comparator) list of editions search by author(if arg will be String) or year of issue(if arg will be int) */
-    public ArrayList<Edition> findShowEditionsByAuthorOrYear(Object arg, Comparator<Edition> comparator){
+    public EditionList findShowEditionsByAuthorOrYear(Object arg, Comparator<Edition> comparator){
         if (arg == null || comparator == null) return null;
-        ArrayList<Edition> tempList = new ArrayList();
+        EditionList tempList = new EditionList();
         if (arg instanceof String)
             for (Edition edition : listEditions) {
                 if (arg.equals(edition.getAuthor()))
@@ -154,9 +157,9 @@ public class Library {
         return tempList;
     }
     /** Return sorted(by comparator) list of editions search by keywords in all fields. Editions to String and contains with it*/
-    public ArrayList<Edition> findShowEditionByKeywords(Comparator<Edition> comparator, String ...keywords){
+    public EditionList findShowEditionByKeywords(Comparator<Edition> comparator, String ...keywords){
         if (keywords == null || comparator == null) return null;
-        ArrayList<Edition> tempList = new ArrayList();
+        EditionList tempList = new EditionList();
         for (Edition edition : listEditions) {
             for (String keyword : keywords) {
                 if(edition.infoToString().contains(keyword))
